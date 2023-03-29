@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <h1>Métodos estáticos, getters y setters </h1>
+
+    <script>
+
+        class Animal {
+            constructor(nombre, genero){
+                this.nombre = nombre;
+                this.genero = genero;
+                this.raza = null;
+            }
+
+              sonar(){
+               console.log("Hago sonidos porque estoy vivo");
+            }
+
+              saludar(){
+               console.log(`Hola mi llamo ${this.nombre}`);
+            }
+
+
+            static queEres(){
+                console.log("Los son mamiferos de la raza de los caninos, son considerados los mejores amigos de los hombre");
+            }
+
+
+             get getRaza(){
+                return this.raza;
+             }
+
+
+             set setRaza(raza){
+                this.raza = raza;
+             }
+        }
+
+           Animal.queEres();
+
+        const mimi = new Animal("mimi","Hembra"),
+          scooby = new Animal("scooby", "Macho");
+
+
+          console.log(mimi);
+          mimi.saludar();
+          mimi.sonar();
+
+          console.log(scooby);
+          scooby.saludar();
+          scooby.sonar();
+
+          console.log(scooby.getRaza);
+          scooby.setRaza = "Gran Danes";
+          console.log(scooby.getRaza);
+
+            
+
+
+    </script>
+    
+</body>
+</html>

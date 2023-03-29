@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>CLASES Y HERENCIAS</h1>
+
+    <Script>
+        class Animal {
+            constructor(nombre, genero){
+                this.nombre = nombre;
+                this.genero = genero;
+            }
+
+              sonar(){
+               console.log("Hago sonidos porque estoy vivo");
+            }
+
+              saludar(){
+               console.log(`Hola mi llamo ${this.nombre}`);
+            }
+
+        }
+
+        const mimi = new Animal("mimi","Hembra"),
+          scooby = new Animal("scooby", "Macho");
+
+
+          console.log(mimi);
+          mimi.saludar();
+          mimi.sonar();
+
+          console.log(scooby);
+          scooby.saludar();
+          scooby.sonar();
+            
+
+
+
+
+
+
+    </Script>
+    
+</body>
+</html>
