@@ -36,6 +36,48 @@
        console.log("hermana")
        console.groupEnd
 
+       const numero = [1,2,3,4,5,6,7,8,9],
+       vocales = ["a","b","c","d","e","f","g","h","i"]
+       console.table(numero);
+       console.table(vocales);
+
+       const perro = {
+           nombre:"Perla",
+           raza: "Chandosa",
+           edad: "2 años",
+           color: "Blanca"
+       }
+       console.table(perro);
+       console.clear();
+
+
+
+       console.time("el tiempo de ejecucion es: ");
+       const arreglo = Array(1000000);
+
+       for(let i = 0; i < arreglo.length; i++ ){
+        arreglo[1] = 1;
+       }
+        console.timeEnd("el tiempo de ejecucion es: ");
+        console.log(arreglo);
+
+        let x = 6,
+        y = 4,
+        pruebaxy = "Se espera que x sea menor que y";
+        console.assert(x < y, (x, y, pruebaxy));
+
+        console.clear();
+
+
+        console.log(Date());
+
+
+
+
+
+
+
+
 
 
 
